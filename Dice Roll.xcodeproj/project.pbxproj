@@ -12,8 +12,13 @@
 		220C368922AF1699002FA018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220C368722AF1699002FA018 /* Main.storyboard */; };
 		220C368B22AF169B002FA018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220C368A22AF169B002FA018 /* Assets.xcassets */; };
 		220C368E22AF169B002FA018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220C368C22AF169B002FA018 /* LaunchScreen.storyboard */; };
-		220C369922AF169B002FA018 /* Dice_RollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C369822AF169B002FA018 /* Dice_RollTests.swift */; };
-		220C36A422AF169B002FA018 /* Dice_RollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C36A322AF169B002FA018 /* Dice_RollUITests.swift */; };
+		220C36B222AF214D002FA018 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C36B122AF214D002FA018 /* Die.swift */; };
+		220C36B422AF21A3002FA018 /* d4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220C36B322AF21A3002FA018 /* d4.swift */; };
+		223C8A3122AF7FD3006B1FC1 /* d6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C8A3022AF7FD3006B1FC1 /* d6.swift */; };
+		223C8A3322AF800F006B1FC1 /* d8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C8A3222AF800F006B1FC1 /* d8.swift */; };
+		223C8A3522AF801D006B1FC1 /* d10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C8A3422AF801D006B1FC1 /* d10.swift */; };
+		223C8A3722AF8044006B1FC1 /* d12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C8A3622AF8044006B1FC1 /* d12.swift */; };
+		223C8A3922AF8052006B1FC1 /* d20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C8A3822AF8052006B1FC1 /* d20.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +47,14 @@
 		220C368D22AF169B002FA018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		220C368F22AF169B002FA018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		220C369422AF169B002FA018 /* Dice RollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dice RollTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		220C369822AF169B002FA018 /* Dice_RollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_RollTests.swift; sourceTree = "<group>"; };
-		220C369A22AF169B002FA018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		220C369F22AF169B002FA018 /* Dice RollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dice RollUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		220C36A322AF169B002FA018 /* Dice_RollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice_RollUITests.swift; sourceTree = "<group>"; };
-		220C36A522AF169B002FA018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220C36B122AF214D002FA018 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		220C36B322AF21A3002FA018 /* d4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d4.swift; sourceTree = "<group>"; };
+		223C8A3022AF7FD3006B1FC1 /* d6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d6.swift; sourceTree = "<group>"; };
+		223C8A3222AF800F006B1FC1 /* d8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d8.swift; sourceTree = "<group>"; };
+		223C8A3422AF801D006B1FC1 /* d10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d10.swift; sourceTree = "<group>"; };
+		223C8A3622AF8044006B1FC1 /* d12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d12.swift; sourceTree = "<group>"; };
+		223C8A3822AF8052006B1FC1 /* d20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d20.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				220C368222AF1699002FA018 /* Dice Roll */,
-				220C369722AF169B002FA018 /* Dice RollTests */,
-				220C36A222AF169B002FA018 /* Dice RollUITests */,
 				220C368122AF1699002FA018 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,26 +109,15 @@
 				220C368A22AF169B002FA018 /* Assets.xcassets */,
 				220C368C22AF169B002FA018 /* LaunchScreen.storyboard */,
 				220C368F22AF169B002FA018 /* Info.plist */,
+				220C36B122AF214D002FA018 /* Die.swift */,
+				220C36B322AF21A3002FA018 /* d4.swift */,
+				223C8A3022AF7FD3006B1FC1 /* d6.swift */,
+				223C8A3222AF800F006B1FC1 /* d8.swift */,
+				223C8A3422AF801D006B1FC1 /* d10.swift */,
+				223C8A3622AF8044006B1FC1 /* d12.swift */,
+				223C8A3822AF8052006B1FC1 /* d20.swift */,
 			);
 			path = "Dice Roll";
-			sourceTree = "<group>";
-		};
-		220C369722AF169B002FA018 /* Dice RollTests */ = {
-			isa = PBXGroup;
-			children = (
-				220C369822AF169B002FA018 /* Dice_RollTests.swift */,
-				220C369A22AF169B002FA018 /* Info.plist */,
-			);
-			path = "Dice RollTests";
-			sourceTree = "<group>";
-		};
-		220C36A222AF169B002FA018 /* Dice RollUITests */ = {
-			isa = PBXGroup;
-			children = (
-				220C36A322AF169B002FA018 /* Dice_RollUITests.swift */,
-				220C36A522AF169B002FA018 /* Info.plist */,
-			);
-			path = "Dice RollUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +252,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				220C368622AF1699002FA018 /* ViewController.swift in Sources */,
+				223C8A3322AF800F006B1FC1 /* d8.swift in Sources */,
 				220C368422AF1699002FA018 /* AppDelegate.swift in Sources */,
+				223C8A3922AF8052006B1FC1 /* d20.swift in Sources */,
+				223C8A3722AF8044006B1FC1 /* d12.swift in Sources */,
+				223C8A3122AF7FD3006B1FC1 /* d6.swift in Sources */,
+				223C8A3522AF801D006B1FC1 /* d10.swift in Sources */,
+				220C36B222AF214D002FA018 /* Die.swift in Sources */,
+				220C36B422AF21A3002FA018 /* d4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				220C369922AF169B002FA018 /* Dice_RollTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				220C36A422AF169B002FA018 /* Dice_RollUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98Q776R3ML;
 				INFOPLIST_FILE = "Dice Roll/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98Q776R3ML;
 				INFOPLIST_FILE = "Dice Roll/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
